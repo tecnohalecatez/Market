@@ -3,6 +3,7 @@ package com.hact.market.persistence.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import java.util.List;
 
 /**
  * The Product class represents a product entity in the database.
@@ -56,5 +57,18 @@ public class Product {
      */
     @Column(name = "estado")
     private Boolean state;
+
+    /**
+     * The category associated with the product.
+     */
+    @ManyToOne
+    @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
+    private Category category;
+
+    /**
+     * The purchases associated with the product.
+     */
+    @OneToMany(mappedBy = "product")
+    private List<ProductPurchase> productPurchases;
 
 }
