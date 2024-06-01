@@ -5,6 +5,7 @@ import com.hact.market.domain.repository.ProductRepository;
 import com.hact.market.persistence.crud.ProductCrudRepository;
 import com.hact.market.persistence.entity.Product;
 import com.hact.market.persistence.mapper.ProductMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,8 +13,9 @@ import java.util.Optional;
 
 @Repository
 public class PersistenceProductRepository implements ProductRepository {
-
+    @Autowired
     private ProductCrudRepository productCrudRepository;
+    @Autowired
     private ProductMapper mapper;
 
     @Override
