@@ -1,9 +1,10 @@
-package com.hact.market.persistence.mapper;
+package com.hact.market.persistence;
 
 import com.hact.market.domain.DomainPurchase;
 import com.hact.market.domain.repository.PurchaseRepository;
 import com.hact.market.persistence.crud.PurchaseCrudRepository;
 import com.hact.market.persistence.entity.Purchase;
+import com.hact.market.persistence.mapper.PurchaseMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

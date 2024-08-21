@@ -50,7 +50,7 @@ public class Purchase {
      * The state of the purchase. True if the purchase is active, false otherwise.
      */
     @Column(name = "estado")
-    private Boolean state;
+    private String state;
 
     /**
      * The client associated with the purchase.

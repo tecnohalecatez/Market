@@ -21,16 +21,19 @@ public class ProductPurchase {
     /**
      * The quantity of the product in the purchase.
      */
+    @Column(name = "cantidad")
     private Integer quantity;
 
     /**
      * The total price of the product in the purchase.
      */
+    @Column(name = "total")
     private Double total;
 
     /**
      * The state of the product purchase. True if the product purchase is active, false otherwise.
      */
+    @Column(name = "estado")
     private Boolean state;
 
     /**
