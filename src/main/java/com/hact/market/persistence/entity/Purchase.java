@@ -62,7 +62,7 @@ public class Purchase {
     /**
      * The products associated with the purchase.
      */
-    @OneToMany(mappedBy = "purchase")
+    @OneToMany(mappedBy = "purchase", cascade = {CascadeType.ALL})
     private List<ProductPurchase> productPurchases;
 
 }

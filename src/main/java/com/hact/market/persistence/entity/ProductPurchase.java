@@ -44,6 +44,7 @@ public class ProductPurchase {
      * The purchase associated with the product purchase.
      */
     @ManyToOne
+    @MapsId("idPurchase")
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)
     private Purchase purchase;
 }
