@@ -2,6 +2,7 @@ package com.hact.market.web.controller;
 
 import com.hact.market.domain.DomainPurchase;
 import com.hact.market.domain.service.PurchaseService;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,10 @@ public class PurchaseController {
     private PurchaseService purchaseService;
 
     @GetMapping("/all")
+    @Operation(
+            summary = "Obtener las compras realizadas",
+            description = "Retorna todas las compras ejecutadas en la tienda"
+    )
     public ResponseEntity<List<DomainPurchase>> getAll() {
         return new ResponseEntity<>(purchaseService.getAll(), HttpStatus.OK);
     }
