@@ -8,7 +8,7 @@ import lombok.Setter;
  * The ProductPurchase class represents a product purchase entity in the database.
  */
 @Entity
-@Table(name = "compras_productos")
+@Table(name = "compras_productos", schema = "market")
 @Getter
 @Setter
 public class ProductPurchase {

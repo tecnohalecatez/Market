@@ -9,7 +9,7 @@ import java.util.List;
  * The Client class represents a client entity in the database.
  */
 @Entity
-@Table(name = "clientes")
+@Table(name = "clientes", schema = "market")
 @Getter
 @Setter
 public class Client {

@@ -9,7 +9,7 @@ import java.util.List;
  * The Category class represents a category entity in the database.
  */
 @Entity
-@Table(name = "categorias")
+@Table(name = "categorias", schema = "market")
 @Getter
 @Setter
 public class Category {

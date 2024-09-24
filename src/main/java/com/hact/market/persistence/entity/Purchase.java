@@ -10,7 +10,7 @@ import java.util.List;
  * The Purchase class represents a purchase entity in the database.
  */
 @Entity
-@Table(name = "compras")
+@Table(name = "compras", schema = "market")
 @Getter
 @Setter
 public class Purchase {

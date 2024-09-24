@@ -9,7 +9,7 @@ import java.util.List;
  * The Product class represents a product entity in the database.
 */
 @Entity
-@Table(name = "productos")
+@Table(name = "productos", schema = "market")
 @Getter
 @Setter
 public class Product {
